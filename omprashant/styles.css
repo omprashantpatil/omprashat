@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    padding: 40px 0; /* Adds more padding around the header */
+    text-align: center;
+    position: relative; /* Ensure header doesn't overlap with other sections */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack items vertically for better layout */
+    padding: 50px 0;
+}
+
+.profile-photo img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    margin-bottom: 20px; /* Adds space below the image */
+}
+
+.header-text {
+    text-align: center;
+    margin-bottom: 40px; /* Add more bottom margin to separate from the next section */
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #6a11cb;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.about, .skills, .projects, .contact-form {
+    margin: 80px auto; /* Adds more margin to space out each section */
+    padding: 20px;
+    max-width: 1000px;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill {
+    text-align: center;
+    padding: 20px;
+}
+
+.projects .project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    background-color: #6a11cb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px; /* Adds spacing after form inputs */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    margin-top: 50px; /* Ensures space above the footer */
+}
+
+/* Fixing overlap issue specifically */
+#contact-form {
+    margin-top: 120px; /* Add large margin-top to push the contact form lower */
+}
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omprashant Patil Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-form">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <div class="profile-photo">
+                <img src="passpic3.jpg" alt="Omprashant Patil">
+            </div>
+            <div class="header-text">
+                <h1>Omprashant Patil</h1>
+                <p>Electronics & Telecommunication Engineer | Java Developer | Cloud Enthusiast</p>
+                <a href="#contact-form" class="cta-btn">Contact Me</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Omprashant Patil, an Electronics & Telecommunication Engineer currently pursuing my B.E. at Sinhgad Institute of Technology & Science, Pune, with a CGPA of 9.17. I'm passionate about software development, cloud technologies, and solving complex problems. I'm skilled in Java, OOP, cloud computing with Microsoft Azure, and data visualization using Power BI.</p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skill">
+                <h3>Programming Languages</h3>
+                <p>Java, C++, C</p>
+            </div>
+            <div class="skill">
+                <h3>Technologies</h3>
+                <p>Azure Cloud, Power BI, MySQL</p>
+            </div>
+            <div class="skill">
+                <h3>Frameworks</h3>
+                <p>Spring Boot (Learning)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>Secure Chat Application</h3>
+                <p>Collaborated on developing a secure chat app to protect sensitive communication. I worked on the backend using Java and integrated the system with Firebase.</p>
+            </div>
+            <div class="project">
+                <h3>Database Table Creation</h3>
+                <p>Developed a desktop app with JavaFX to manage MySQL databases. The app allows users to create and manage database tables.</p>
+            </div>
+            <div class="project">
+                <h3>IoT-Based Mobile App for Farmers</h3>
+                <p>Developing an app to assist farmers in optimizing crop growth and maximizing profit. I'm responsible for backend and database management using Java and MySQL.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-form" class="contact-form">
+        <h2>Contact Me</h2>
+        <form id="contact" onsubmit="return validateForm()" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required minlength="3">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Omprashant Patil</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
